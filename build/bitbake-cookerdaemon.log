@@ -1,0 +1,86 @@
+2590178 10:44:39.342744 --- Starting bitbake server pid 2590178 at 2024-08-06 10:44:39.342734 ---
+2590178 10:44:39.343206 Started bitbake server pid 2590178
+2590178 10:44:39.343304 Entering server connection loop
+2590178 10:44:39.343582 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+2590178 10:44:39.344348 Processing Client
+2590178 10:44:39.344380 Connecting Client
+2590178 10:44:39.344511 Running command ['setFeatures', [2, 1]]
+2590178 10:44:39.344546 Command Completed
+2590178 10:44:39.345077 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/allen/repo/bbpg/poky', 'LOGNAME': 'allen', 'HOME': '/home/allen', 'BBPATH': '/home/allen/repo/bbpg/poky/build', 'USER': 'allen', 'PATH': '/home/allen/repo/bbpg/poky/scripts:/home/allen/repo/bbpg/poky/bitbake/bin:/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/home/allen/.nvm/versions/node/v22.5.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'NVM_INC': '/home/allen/.nvm/versions/node/v22.5.1/include/node', 'TERM_PROGRAM_VERSION': '1.91.1', 'OE_ADDED_PATHS': '/home/allen/repo/bbpg/poky/scripts:/home/allen/repo/bbpg/poky/bitbake/bin:', 'LC_ADDRESS': 'de_DE.UTF-8', 'LC_NAME': 'de_DE.UTF-8', 'LC_MONETARY': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'VSCODE_GIT_ASKPASS_NODE': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node', 'MOTD_SHOWN': 'pam', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'GIT_ASKPASS': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh', 'SSH_CONNECTION': '10.242.8.37 58865 10.88.35.56 22', 'NVM_DIR': '/home/allen/.nvm', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/allen/repo/bbpg/poky/bitbake/lib:/home/allen/repo/bbpg/poky/bitbake/lib:/home/allen/repo/bbpg/poky/bitbake/lib:/home/allen/repo/bbpg/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1004/vscode-git-c26cbbf5a7.sock', 'SHLVL': '2', 'NVM_CD_FLAGS': '', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_SESSION_ID': '270', 'XDG_RUNTIME_DIR': '/run/user/1004', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SSH_CLIENT': '10.242.8.37 58865 22', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'BROWSER': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'BUILDDIR': '/home/allen/repo/bbpg/poky/build', 'NVM_BIN': '/home/allen/.nvm/versions/node/v22.5.1/bin', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/allen/repo/bbpg/poky/build', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1004/vscode-ipc-c154e940-b19f-462b-a88e-1f3e87c170ae.sock', '_': '/home/allen/repo/bbpg/poky/bitbake/bin/bitbake-layers'}, ['/home/allen/repo/bbpg/poky/bitbake/bin/bitbake-layers', 'create-layer', './meta-allen']]
+2590178 10:44:39.538697 Command Completed
+2590178 10:44:39.538957 Running command ['parseConfiguration']
+2590178 10:44:39.539383 Command Completed
+2590178 10:44:39.539558 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2590178 10:44:39.539632 Command Completed
+2590178 10:44:39.539778 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2590178 10:44:39.539834 Command Completed
+2590178 10:44:39.551628 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590178 10:44:39.551700 Command Completed
+2590178 10:44:39.551773 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590178 10:44:39.551862 Command Completed
+2590178 10:44:39.553335 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590178 10:44:39.553398 Command Completed
+2590178 10:44:39.553451 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590178 10:44:39.553524 Command Completed
+2590178 10:44:39.554098 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590178 10:44:39.554160 Command Completed
+2590178 10:44:39.554218 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590178 10:44:39.554295 Command Completed
+2590178 10:44:39.555050 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590178 10:44:39.555121 Command Completed
+2590178 10:44:39.555183 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590178 10:44:39.555270 Command Completed
+2590178 10:44:39.556322 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('LAYERSERIES_COMPAT_core',), {}]
+2590178 10:44:39.556405 Command Completed
+2590178 10:44:39.556727 Running command ['clientComplete']
+2590178 10:44:39.556774 Command Completed
+2590178 10:44:39.557197 Processing Client
+2590178 10:44:39.557240 Disconnecting Client
+2590178 10:44:39.557385 No timeout, exiting.
+2590178 10:44:39.657705 Exiting
+2590178 10:44:39.661352 Original lockfile contents: ['2590178\n']
+2590178 10:44:39.662604 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/allen/repo/bbpg/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+2590496 10:45:38.464589 --- Starting bitbake server pid 2590496 at 2024-08-06 10:45:38.464578 ---
+2590496 10:45:38.465041 Started bitbake server pid 2590496
+2590496 10:45:38.465138 Entering server connection loop
+2590496 10:45:38.465389 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+2590496 10:45:38.465924 Processing Client
+2590496 10:45:38.465956 Connecting Client
+2590496 10:45:38.466093 Running command ['setFeatures', [2, 1]]
+2590496 10:45:38.466129 Command Completed
+2590496 10:45:38.466635 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PWD': '/home/allen/repo/bbpg/poky/build', 'LOGNAME': 'allen', 'HOME': '/home/allen', 'BBPATH': '/home/allen/repo/bbpg/poky/build', 'USER': 'allen', 'PATH': '/home/allen/repo/bbpg/poky/scripts:/home/allen/repo/bbpg/poky/bitbake/bin:/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/home/allen/.nvm/versions/node/v22.5.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'COLORTERM': 'truecolor', 'NVM_INC': '/home/allen/.nvm/versions/node/v22.5.1/include/node', 'TERM_PROGRAM_VERSION': '1.91.1', 'OE_ADDED_PATHS': '/home/allen/repo/bbpg/poky/scripts:/home/allen/repo/bbpg/poky/bitbake/bin:', 'LC_ADDRESS': 'de_DE.UTF-8', 'LC_NAME': 'de_DE.UTF-8', 'LC_MONETARY': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'VSCODE_GIT_ASKPASS_NODE': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node', 'MOTD_SHOWN': 'pam', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'GIT_ASKPASS': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh', 'SSH_CONNECTION': '10.242.8.37 58865 10.88.35.56 22', 'NVM_DIR': '/home/allen/.nvm', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/allen/repo/bbpg/poky/bitbake/lib:/home/allen/repo/bbpg/poky/bitbake/lib:/home/allen/repo/bbpg/poky/bitbake/lib:/home/allen/repo/bbpg/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LIBVIRT_DEFAULT_URI': 'qemu:///system', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1004/vscode-git-c26cbbf5a7.sock', 'SHLVL': '2', 'NVM_CD_FLAGS': '', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_SESSION_ID': '270', 'XDG_RUNTIME_DIR': '/run/user/1004', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'SSH_CLIENT': '10.242.8.37 58865 22', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'BROWSER': '/home/allen/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'BUILDDIR': '/home/allen/repo/bbpg/poky/build', 'NVM_BIN': '/home/allen/.nvm/versions/node/v22.5.1/bin', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/allen/repo/bbpg/poky', 'TERM_PROGRAM': 'vscode', 'VSCODE_IPC_HOOK_CLI': '/run/user/1004/vscode-ipc-c154e940-b19f-462b-a88e-1f3e87c170ae.sock', '_': '/home/allen/repo/bbpg/poky/bitbake/bin/bitbake-layers'}, ['/home/allen/repo/bbpg/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-allen']]
+2590496 10:45:38.643180 Command Completed
+2590496 10:45:38.643447 Running command ['parseConfiguration']
+2590496 10:45:38.643888 Command Completed
+2590496 10:45:38.644089 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+2590496 10:45:38.644221 Command Completed
+2590496 10:45:38.644422 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+2590496 10:45:38.644540 Command Completed
+2590496 10:45:38.647159 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590496 10:45:38.647269 Command Completed
+2590496 10:45:38.647450 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590496 10:45:38.647584 Command Completed
+2590496 10:45:38.648253 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590496 10:45:38.648353 Command Completed
+2590496 10:45:38.648506 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590496 10:45:38.648621 Command Completed
+2590496 10:45:38.649705 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590496 10:45:38.649801 Command Completed
+2590496 10:45:38.649961 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590496 10:45:38.650073 Command Completed
+2590496 10:45:38.650679 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+2590496 10:45:38.650802 Command Completed
+2590496 10:45:38.650966 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+2590496 10:45:38.651077 Command Completed
+2590496 10:45:38.652224 Running command ['parseConfiguration']
+2590496 10:45:38.768463 Command Completed
+2590496 10:45:38.768772 Running command ['clientComplete']
+2590496 10:45:38.768825 Command Completed
+2590496 10:45:38.768983 Processing Client
+2590496 10:45:38.769005 Disconnecting Client
+2590496 10:45:38.769060 No timeout, exiting.
+2590496 10:45:38.869364 Exiting
+2590496 10:45:38.873578 Original lockfile contents: ['2590496\n']
+2590496 10:45:38.874868 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/allen/repo/bbpg/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
