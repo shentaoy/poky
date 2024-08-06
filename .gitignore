@@ -11,6 +11,7 @@ meta-*/
 buildtools/
 !meta-skeleton
 !meta-selftest
+!meta-hello-allen
 hob-image-*.bb
 *.swp
 *.orig
